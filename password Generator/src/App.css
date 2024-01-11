@@ -1,0 +1,79 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.main-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+}
+
+.title{
+  position: absolute;
+  top:10px;
+}
+
+.container {
+  background: grey;
+  padding: 40px;
+  border-radius: 20px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.input{
+  width: 50%;
+  outline:none;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: larger;
+  color:white;
+  font-weight: 600;
+}
+
+.controls{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.msg{
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: beige;
+  color: black;
+  padding: 5px;
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  transform: translateX(-50%);
+
+  animation: fadeInOut 2s ease-in;
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(20px); /* Move 20px downwards initially */
+  }
+  20%, 80% {
+    opacity: 1; /* Fade in between 20% and 80% of the animation */
+    transform: translateY(0); /* Move back to the original position */
+  }
+  100% {
+    opacity: 0; /* Fade out at the end */
+  }
+}
